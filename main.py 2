@@ -1,0 +1,43 @@
+
+# Online Python - IDE, Editor, Compiler, Interpreter
+
+def sum(a, b):
+    return (a + b)
+
+a = int(input('Enter 1st number: '))
+b = int(input('Enter 2nd number: '))
+
+print(f'Sum of {a} and {b} is {sum(a, b)}')
+def calcular():
+    while True:
+        print("\nCalculadora Interativa")
+        print("1. Soma")
+        print("2. Subtração")
+        print("3. Multiplicação")
+        print("4. Divisão")
+        print("5. Sair")
+
+        opcao = input("Escolha uma opção (1-5): ")
+
+        if opcao == '5':
+            print("Encerrando...")
+            break
+
+        a = float(input("Digite o primeiro número: "))
+        b = float(input("Digite o segundo número: "))
+
+        if opcao == '1':
+            print(f"Resultado: {a + b}")
+        elif opcao == '2':
+            print(f"Resultado: {a - b}")
+        elif opcao == '3':
+            print(f"Resultado: {a * b}")
+        elif opcao == '4':
+            if b == 0:
+                print("Erro: divisão por zero")
+            else:
+                print(f"Resultado: {a / b}")
+        else:
+            print("Opção inválida. Tente novamente.")
+
+calcular()
